@@ -6,8 +6,8 @@ class mongo_connection:
   conn = None
 
   def connect(self):
-    myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-    mydb = myclient["flask_tutorial"]
+    myclient = pymongo.MongoClient("mongodb+srv://Sudarshan:Sumo1999@cluster0.8hmuosu.mongodb.net/")
+    mydb = myclient["test"]
     self.conn = mydb["restaurants"]
 
   def query(self, sql):
